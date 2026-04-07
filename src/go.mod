@@ -1,6 +1,7 @@
 module std
 
-go 1.27
+// Relaxed below 1.27 so KaaS / CI can use stable golang:1.26 images (Option C).
+go 1.26
 
 require (
 	golang.org/x/crypto v0.47.1-0.20260113154411-7d0074ccc6f1
